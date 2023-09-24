@@ -9,7 +9,7 @@ const LinkButton = ({ link, text }: Props) => {
   return (
     <Link
       href={link}
-      className=" inline-block py-2 px-3 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl  focus:outline-none   font-medium rounded-lg  text-center "
+      className=" inline-block py-2 px-3 bg-gradient-to-bl text-white from-teal-500 to-sky-500 transition-all duration-500 hover:shadow-md rounded hover:bg-gradient-to-tl"
     >
       {text && text}
     </Link>
