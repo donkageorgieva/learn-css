@@ -2,6 +2,7 @@ import { IQuizState } from "@/interfaces/IQuizState";
 import { createSlice } from "@reduxjs/toolkit";
 const initialState: IQuizState = {
   questions: [],
+  answers: [],
 };
 export const quizSlice = createSlice({
   name: "quiz",

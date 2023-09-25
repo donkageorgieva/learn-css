@@ -1,6 +1,5 @@
 import Card from "@/components/UI/Card";
 import LinkButton from "@/components/UI/LinkButton";
-import Link from "next/link";
 
 export default function Home() {
   return (
