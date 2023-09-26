@@ -1,3 +1,5 @@
+import { IQuizAnswer } from "./IQuizAnswer";
+
 export interface IQuizQuestion {
   _id: string;
   question: string;
