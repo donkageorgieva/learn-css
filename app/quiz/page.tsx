@@ -1,6 +1,4 @@
-import QuestionBlock from "@/components/UI/QuestionBlock";
 import QuizStateProvider from "@/components/redux/QuizStateProvider";
-import { IQuizQuestion } from "@/interfaces/IQuizQuestion";
 
 const Quiz = async () => {
   let questions;
