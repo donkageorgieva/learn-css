@@ -8,7 +8,7 @@ import QuestionBlock from "../UI/QuestionBlock";
 interface Props {
   questions: Array<IQuizQuestion>;
 }
-const QuizStateProvider = ({ questions }: Props) => {
+const QuizLayout = ({ questions }: Props) => {
   const dispatch: AppDispatch = useDispatch();
   dispatch(
     setQuiz({
@@ -25,7 +25,11 @@ const QuizStateProvider = ({ questions }: Props) => {
     questionInArrayIndex === -1
       ? questions[0]
       : questions[questionInArrayIndex];
-  return <QuestionBlock {...questionProps} />;
+  return (
+    <>
+      <QuestionBlock {...questionProps} />
+    </>
+  );
 };
 
-export default QuizStateProvider;
+export default QuizLayout;
