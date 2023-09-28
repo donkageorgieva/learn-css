@@ -1,16 +1,20 @@
-import QuestionBlock from "@/components/UI/QuestionBlock";
+import QuestionBlock from "@/components/quiz/QuestionBlock";
 
 interface Params {
   params: { id: string };
 }
 
 const Question = async ({ params: { id } }: Params) => {
-  const response = await fetch(`${process.env.localEnv}/api/quiz/${id}`);
+  const response = await fetch(
+    `${process.env.localEnv}/api/questions?id=${id}`
+  );
+
   let question;
   if (response.ok) {
     question = await response.json();
   }
-  return question && <QuestionBlock {...question} />;
+
+  return <QuestionBlock {...question} />;
 };
 
 export default Question;
