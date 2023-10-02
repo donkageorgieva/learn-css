@@ -2,7 +2,7 @@
 
 import cx from "classnames";
 import { IQuizQuestion } from "@/interfaces/IQuizQuestion";
-import Card from "./Card";
+import Card from "../UI/Card";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/redux/store";
 import { setAnswer } from "@/redux/features/quizSlice";
@@ -25,7 +25,7 @@ const QuestionBlock = (props: IQuizQuestion) => {
     );
   };
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div>
       <Card title={props.question}>
         <ol className="list-inside list-decimal">
           {props.answers.map((answerItem, index) => (

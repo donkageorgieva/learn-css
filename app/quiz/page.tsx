@@ -1,4 +1,4 @@
-import QuizStateProvider from "@/components/redux/QuizStateProvider";
+import QuizLayout from "@/components/redux/QuizLayout";
 
 const Quiz = async () => {
   let questions;
@@ -13,9 +13,9 @@ const Quiz = async () => {
   }
 
   return (
-    <>
-      <QuizStateProvider questions={questions} />
-    </>
+    <main className="py-5">
+      <QuizLayout questions={questions} />
+    </main>
   );
 };
 
