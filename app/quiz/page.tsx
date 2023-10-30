@@ -1,3 +1,5 @@
+
+"use client"
 import QuizStateProvider from "@/components/redux/QuizStateProvider";
 
 const Quiz = async () => {
